@@ -26,8 +26,8 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v5
         with:
-          context: ./Backend-expensetracker
-          file: ./Backend-expensetracker/backend.Dockerfile
+          context: ./Backend-expensetracker/Springbootproject
+          file: ./Backend-expensetracker/Springbootproject/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8-backend:latest
 
